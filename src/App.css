@@ -1,0 +1,387 @@
+.App {
+  text-align: center;
+}
+
+/*---------------------------*/
+/*        Sect.Header        */
+/*---------------------------*/
+
+.App-header{
+  margin: 0 auto;
+  padding: 0;
+  background-color: #000;
+  min-height: 100vh;
+  background: radial-gradient(ellipse 70% 70% at 46% 50%, #0f0b42 0, #000 70%);
+  display: flex;
+  width: 100%;
+}
+
+.box{
+  width: 50%;
+  display: block;
+  margin:auto;
+}
+
+.box img{
+  width: 100%;
+}
+
+/*---------------------------*/
+/*     Sect. Intro           */
+/*---------------------------*/
+.App-intro {
+  text-align: left;
+  background-color: #1a237e;
+  min-height: 100vh;
+  padding: 20px;
+  color: #fff;
+  background: radial-gradient(ellipse 70% 70% at 46% 50%, #051b15 0, #000 70%);
+}
+
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+img.imgWhoIm{
+width: 300px !important;
+}
+/*---------------------------*/
+/*          Accordeon        */
+/*---------------------------*/
+.accordion {
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0 auto;
+  font-size:14px;
+  width:600px;
+  padding:10px;
+  background:rgba(252, 0, 0, 0);
+}
+.accordion ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.accordion li {
+  margin:0;
+  padding:0;
+}
+.accordion [type=radio], .accordion [type=checkbox] {
+  display:none;
+}
+.accordion label {
+  display:block;
+  font-size:16px;
+  line-height:16px;
+  background:rgba(252, 38, 0, 0);
+  color:#ffffff;
+  text-shadow:1px 1px 1px rgba(255,255,255,0.3);
+  font-weight:700;
+  cursor:pointer;
+  text-transform:uppercase;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+}
+.accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
+  background:rgba(0, 0, 0, 0);
+  color:#FFF;
+  text-shadow:1px 1px 1px rgba(0, 0, 0, 0)
+}
+.accordion .content{
+  padding:0 10px;
+  overflow:hidden;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+}
+.accordion p {
+  color: #8c8c8c;
+  margin:0 0 10px;
+}
+.accordion h3 {
+  color:#fff;
+  padding:0;
+  margin:10px 0;
+}
+
+.styleLbl{
+  color: #FFF;
+  font-size: 1em;
+  border-top: 1px solid rgba(255, 255, 255, .5);
+  padding: 1.2em 0;
+  font-weight: 700;
+}
+
+/* Vertical */
+.vertical ul li {
+  overflow:hidden;
+  margin:0 0 1px;
+
+}
+.vertical ul li label {
+  padding: 20px 0;
+  font-weight: lighter;
+}
+.vertical [type=radio]:checked ~ label, .vertical [type=checkbox]:checked ~ label {
+  border-bottom:0;
+}
+.vertical ul li label:hover {
+  color: white;
+}
+.vertical ul li .content {
+  height:0px;
+  border-top:0;
+}
+.vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
+  height:300px;
+
+}
+
+.accordion.vertical{
+  margin: auto;
+}
+
+.contenair{
+  margin: 0 auto;
+  padding: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.element{
+  margin: 20px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: #0000FF;
+  -webkit-transition: width 3s, height 3s, background-color 2s, -webkit-transform 2s;
+  transition: width 3s, height 3s, background-color 2s, transform 2s;
+}
+
+.whoIm{
+  display: flex;
+}
+.myImg,.whoIm{
+  width: 49%;
+
+}
+.myImg img{
+  width: 100%;
+}
+.ls_input_section_header_gs
+{   
+ position: absolute;
+    top: 15px;    
+}
+    .ls_input_section_header_gs a:hover:after {
+  content: attr(title);
+}
+
+/*---------------------------*/
+/*     Sect. Folio           */
+/*---------------------------*/
+.App-folio {
+  padding: 20px;
+  font-size: large;
+  min-height: 100vh;
+  background: radial-gradient(ellipse 70% 70% at 46% 50%, #1f0e0e 0, #000 70%)
+}
+
+#conteneur
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ImgFolio{
+  width: 100% !important;
+
+}
+
+.element {
+  position: relative;
+  border: 1px solid #333;
+  margin: 2%;
+  overflow: hidden;
+}
+.element img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.element:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+img.item-overlay.top{
+  width: 100%;
+}
+
+a{
+  display: block;
+  text-align: center;
+}
+
+/*---------------------------*/
+/*     Sect. contact         */
+/*---------------------------*/
+.App-contact{
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  background: radial-gradient(#0f3150 0, #000 66%);
+  display: flex;
+}
+#bloc_page{
+  margin: auto;
+}
+
+/*---------------------------*/
+/*          CARTE            */
+/*---------------------------*/
+
+.flipcard{
+	position:relative;
+	display:inline-block;
+	width:500px;
+	height:300px;
+  margin-left:3%;
+}
+
+
+/*face arriere carte*/
+.back{
+	position:absolute;
+	width:98%;
+	height:98%;
+	border: solid 1px black;
+	-webkit-transform: rotateY(90deg);
+	background-color: #fff;
+	 transition: all 1s linear 0s;
+	border-radius: 8px;
+  cursor: pointer;
+}
+
+/*face avant carte*/
+.front{
+	position:absolute;
+	width:98%;
+  height:98%;
+  font-family: 'roboto';
+  background-color: #1A237E;
+  color: #ffffff;
+	baground-size:contain;
+	background-position:center;
+	transition: all 1s linear 1s;
+	border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+#cbx:checked + .front{
+	-webkit-transform: rotateY(90deg);
+	 transition: all 1s linear 0s;
+}
+#cbx:checked ~ .back{
+	-webkit-transform: rotateY(0deg);
+   transition: all 1s linear 1s;
+  }
+#cbx{
+	display:none;
+}
+
+/*---------------------------*/
+/*         B. Cart           */
+/*---------------------------*/
+
+/*         AVANT             */
+.details{
+text-align:left;
+display: flex;
+}
+
+.role{
+ padding-bottom:25px; 
+ font-weight: lighter;
+ text-transform: uppercase;
+ font-size: 12px;
+ color: #BDBDBD;
+}
+
+.contact{
+ padding-bottom:5px;
+}
+ 
+ .avatar img {
+   border-radius :15px; 
+   width: 90%;
+ }
+ .name{
+   font-weight: lighter;
+   font-size: 27px;
+   color: #57c7dc;
+ }
+
+ .info span{
+  text-transform: uppercase;
+  font-weight: bold;
+ }
+
+
+/*         ARRIERE            */
+
+.social {
+  margin-top: 40px;
+  margin-left: 5%;
+  width: 43%;
+  float: left;
+  vertical-align: middle;
+  border-right: 1px solid #ccc;
+}
+
+.social table{
+  width:100%; 
+  height:220px;
+  border-collapse:collapse;
+}
+
+.social table td{
+  width:50%;
+}
+
+.socialico{
+  height:32px;
+  width:32px;
+  float:left;
+  margin-left:30px;
+  margin-right:0px;
+  margin-top:10px;
+}
+
+.sociallink{
+ float:left; 
+ margin:20px;
+}
+
+.sociallink a{
+ text-decoration:none;
+ color: #006cab;
+}
+
+img.coding{
+  margin-top: 25%;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
